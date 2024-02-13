@@ -1,38 +1,9 @@
 var noTaskbar = 0;
 var alwaysHideNSFW = true;
-var randomNames = [
-  'Rick Deckard',
-  'James Bond',
-  'Korben Dallas',
-  'Danny Ocean',
-  'Cha Tae-sik',
-  'Homer Hickam',
-  'Ben Wade',
-  'Jon Osterman',
-  'Vincent Freeman',
-  'Llewelyn Moss',
-  'Richard Winters',
-  'Lewis Nixon',
-  'George Luz',
-  'Lynn Compton',
-  'Ronald Speirs',
-  'Anton Chigurh',
-  'Irene Cassini',
-  'Sam Bell',
-  'Gerty',
-  'Edward Blake',
-  'Dan Evans',
-  'Charlie Prince',
-  'Quentin',
-  'Jeong So-mi',
-  'Bryan Mills',
-  'Rusty Ryan',
-  'Linus Caldwell',
-  'Jean-Baptiste Emanuel Zorg',
-  'Father Vito Cornelius',
-  'Ruby Rhod',
-  'Chief John Anderton'
-];
+
+let url = 'https://www.surnamedb.com/Surname?alpha=A';
+let params = (new URL(url)).searchParams;
+var randomNames = [ "Bill",params.getElementById("a").getAttribute("href")];
 var idList = [];
 var globalStoryDict = {};
 
